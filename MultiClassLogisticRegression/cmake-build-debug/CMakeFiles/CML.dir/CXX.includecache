@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shanto/CLionProjects/CML/csv.h
+algorithm
+-
+cassert
+-
+cmath
+-
+codecvt
+-
+fstream
+-
+functional
+-
+iostream
+-
+map
+-
+sstream
+-
+string
+-
+typeinfo
+-
+vector
+-
+BaseTsd.h
+-
+
+/home/shanto/CLionProjects/CML/main.cpp
+bits/stdc++.h
+-
+csv.h
+/home/shanto/CLionProjects/CML/csv.h
+
