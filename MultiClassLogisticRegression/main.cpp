@@ -93,40 +93,39 @@ public:
 
 };
 int main() {
-    vector<vector<double>> in;
+    vector <double> x1,x2,x3,x4;vector <string>y;
+    Document doc("../iris.csv");
+    x1=doc.GetColumn<double>("sepal length");
+    x2=doc.GetColumn<double>("sepal width");
+    x3=doc.GetColumn<double>("petal length");
+    x4=doc.GetColumn<double>("petal length");
+    y=doc.GetColumn<string>("class");
+
+    vector <vector<double>> features;
     vector <double> cls;
-    Document dataset("../dataset.csv");
-    vector<double> x1=dataset.GetColumn<double>("x1");
-    vector<double> x2=dataset.GetColumn<double>("x2");
-    vector<double> y=dataset.GetColumn<double>("y");
     for(int i=0;i<x1.size();i++){
-        vector <double> k={x1[i],x2[i]};
-        in.push_back(k);
-        cls.push_back(y[i]);
+        features.push_back({x1[i],x2[i],x3[i],x4[i]});
+        if(y[i]=="Iris-setosa"){
+            cls.push_back(0);
+            cout<<"--added class 0\n";
+        }else if(y[i]=="Iris-versicolor"){
+            cls.push_back(1);
+            cout<<"--added class 1\n";
+        }else{
+            cls.push_back(2);
+            cout<<"--added class 2\n";
+        }
+        cout<<y[i]<<endl;
     }
-    MultiClassLogisticRegression mc(in,cls,.001);
-    mc.train({0,1,2});
-
-    Document test("../test.csv");
-    vector<double> $x1=test.GetColumn<double>("x1");
-    vector<double> $x2=test.GetColumn<double>("x2");
-    vector<double> $y=test.GetColumn<double>("y");
-
-    in.clear();
-    y.clear();
-
-    for(int i=0;i<$x1.size();i++){
-        in.push_back({$x1[i],$x2[i]});
-        y.push_back($y[i]);
+    cout<<"---dataset size= "<<cls.size()<<endl;
+    MultiClassLogisticRegression mlc(features,cls,0.01);
+    mlc.train({0,1,2});
+    int k=0;
+    for(int i=0;i<x1.size();i++){
+        pair<double,double> dk=mlc.predict({x1[i],x2[i],x3[i],x4[i]});
+        cout<<"Algo predicting class: "<<dk.first<<"/ originally: "<<cls[i]<<"; "<<(dk.first==cls[i]?"****":"")<<endl;
+        if(dk.first==cls[i]) k++;
     }
-
-    int i=0,k=0;
-    for(auto a:in){
-        pair <double,double> dk=mc.predict(a);
-        if(dk.first==y[i])k++;
-        cout<<"probability= "<<dk.second<<" to be class "<<dk.first<<":"<<y[i]<<(dk.first==y[i]?" ***, "+to_string(k):"")<<endl;
-        i++;
-    }
-    cout<<"total "<<k<<" correct of "<<in.size()<<" total";
+    cout<<k;
     return 0;
 }
