@@ -1,4 +1,4 @@
-# Install script for directory: /home/shanto/CLionProjects/CML
+# Install script for directory: /home/shanto/CLionProjects/MultiClassLogisticRegression
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shanto/CLionProjects/CML/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

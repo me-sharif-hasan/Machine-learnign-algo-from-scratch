@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/shanto/CLionProjects/CML/csv.h
+/home/shanto/CLionProjects/MultiClassLogisticRegression/csv.h
 algorithm
 -
 cassert
@@ -34,9 +34,9 @@ vector
 BaseTsd.h
 -
 
-/home/shanto/CLionProjects/CML/main.cpp
+/home/shanto/CLionProjects/MultiClassLogisticRegression/main.cpp
 bits/stdc++.h
 -
 csv.h
-/home/shanto/CLionProjects/CML/csv.h
+/home/shanto/CLionProjects/MultiClassLogisticRegression/csv.h
 

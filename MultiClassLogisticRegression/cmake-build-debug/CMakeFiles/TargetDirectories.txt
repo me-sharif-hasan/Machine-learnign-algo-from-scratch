@@ -1,3 +1,3 @@
-/home/shanto/CLionProjects/CML/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/shanto/CLionProjects/CML/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/shanto/CLionProjects/CML/cmake-build-debug/CMakeFiles/CML.dir
+/home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/CMakeFiles/CML.dir

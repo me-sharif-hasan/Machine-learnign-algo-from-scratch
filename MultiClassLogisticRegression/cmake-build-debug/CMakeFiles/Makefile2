@@ -44,10 +44,10 @@ RM = /home/shanto/clion-2020.1.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shanto/CLionProjects/CML
+CMAKE_SOURCE_DIR = /home/shanto/CLionProjects/MultiClassLogisticRegression
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shanto/CLionProjects/CML/cmake-build-debug
+CMAKE_BINARY_DIR = /home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/CML.dir/clean
 CMakeFiles/CML.dir/all:
 	$(MAKE) -f CMakeFiles/CML.dir/build.make CMakeFiles/CML.dir/depend
 	$(MAKE) -f CMakeFiles/CML.dir/build.make CMakeFiles/CML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shanto/CLionProjects/CML/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CML"
 .PHONY : CMakeFiles/CML.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shanto/CLionProjects/CML/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shanto/CLionProjects/CML/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shanto/CLionProjects/MultiClassLogisticRegression/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CML.dir/rule
 
 # Convenience name for target.
