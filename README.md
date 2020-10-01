@@ -1,1 +1,1 @@
-# Machine-learnign-algo-from-scratch
+# Machine-learning-algo-from-scratch
